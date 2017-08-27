@@ -20,11 +20,13 @@ var education = {
         "degree": "Metric",
         "majors": ["Science", "Math", "English", "Computer Science"],
         "dates": "1-march-2015"
+        "url": "www.bpsbhiwani.org"
     }],
     onlineCourses: [{
         "title": "Android Developer Nanodegree",
         "school": "Udacity",
         "dates": "1-January-2017"
+        "url": "www.udacity.com"
     }]
 };
 var work = {
