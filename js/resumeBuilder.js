@@ -20,12 +20,11 @@ var education = {
         "degree": "Metric",
         "majors": ["Science", "Math", "English", "Computer Science"],
         "dates": "1-march-2015"
-        "url": "www.bpsbhiwani.org"
     }],
     onlineCourses: [{
         "title": "Android Developer Nanodegree",
         "school": "Udacity",
-        "dates": "1-January-2017"
+        "dates": "1-January-2017",
         "url": "www.udacity.com"
     }]
 };
@@ -132,6 +131,8 @@ education.display = function() {
         var display_courseTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[j].title);
         var display_courseSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[j].school);
         var display_courseDate = HTMLonlineDates.replace("%data%", education.onlineCourses[j].dates);
+        var display_CourseUrl = HTMLonlineURL.replace("%data%", education.onlineCourses[j].url);
+        $(".education-entry").append(display_CourseUrl);
         $(".education-entry").append(display_courseTitle);
         $(".education-entry").append(display_courseSchool);
         $(".education-entry").append(display_courseDate);
